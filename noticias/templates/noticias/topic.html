@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<body>
+    {% extends "noticias/base.html" %}
+    
+    {% block content %}
+    <ul>  
+        <h2>{{ titulo }}</h2>
+            {% for corpo in corpos %}
+                <p>{{ corpo.date_added | date:'M d, y H:i'}}</p>
+                <li>{{ corpo.text | linebreaks }}</li>
+            {% endfor %}
+    </ul>
+
+    {% endblock content %}
+</body>
+</html>
+
+<ul>
+    {% for corpo in corpos %}
+        <li>{{ corpo.text }}</li>
+    {% endfor %}
+</ul>
