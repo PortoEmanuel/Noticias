@@ -12,13 +12,15 @@
     {% extends "noticias/base.html" %}
     
     {% block content %}
-    <ul>  
-        <h2>{{ titulo }}</h2>
-            {% for corpo in corpos %}
-                <p>{{ corpo.date_added | date:'M d, y H:i'}}</p>
-                <p>{{ corpo.text | linebreaks }}</p>
-            {% endfor %}
-    </ul>
+    <section class="artigo">
+        <ul>
+            <h2>{{ titulo }}</h2>
+                {% for corpo in corpos %}
+                    <p>{{ corpo.date_added | date:'M d, y H:i'}}</p>
+                    <p>{{ corpo.text | linebreaks }}</p>
+                {% endfor %}
+        </ul>
+    </section>
 
     {% endblock content %}
 </body>

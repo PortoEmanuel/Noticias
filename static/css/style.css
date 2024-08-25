@@ -1,13 +1,18 @@
 body {
-    background-color: hsla(271, 77%, 74%, 0.541);
+    background-color: hsla(239, 60%, 70%, 0.322);
 }
 
 header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    width: 98%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px;
-    background-color: #0803034d;
+    background-color: #0803032d;
 }
 
 nav ul {
@@ -25,7 +30,34 @@ nav a {
 }
 
 .clima {
-    margin:0rem 10rem 0rem 10rem;
-    width: 15rem;
-    padding-top: 2rem;
+    padding: auto;
+}
+
+.artigo h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.artigo p {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 25.6px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 900px;
+}
+.artigo {
+    padding: auto;
+    background-color: rgba(0, 0, 255, 0.247);
+    border-radius: 10px;
 }
