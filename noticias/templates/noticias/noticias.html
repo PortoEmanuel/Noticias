@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias</title>
+    <link rel="shortcut icon" href="/static/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+
 </head>
 <body>
     {% extends "noticias/base.html" %}
@@ -11,9 +14,11 @@
     {% block content %}
         <ul>
             {% for titulo in titulos %}
-            <li>{{ titulo }}</li>
+                <li>
+                    <a href="{% url 'article' titulo.id %}">{{ titulo }}</a>
+                </li>
             {% empty %}
-            <li>Não há assuntos adicionados</li>
+                <li>Não há assuntos adicionados</li>
             {% endfor %}
         </ul>
     {% endblock content %}

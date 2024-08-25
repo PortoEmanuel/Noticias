@@ -1,0 +1,31 @@
+body {
+    background-color: hsla(271, 77%, 74%, 0.541);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0803034d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clima {
+    margin:0rem 10rem 0rem 10rem;
+    width: 15rem;
+    padding-top: 2rem;
+}

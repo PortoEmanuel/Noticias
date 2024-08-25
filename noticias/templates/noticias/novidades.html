@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>Novidades</title>
     <link rel="shortcut icon" href="/static/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/style.css">
+
 </head>
 <body>
     {% extends "noticias/base.html" %}
-    
     {% block content %}
-    <div>
-        <article>
-            <p>Aqui Começa o site de notícias</p>
-        </article>
-    </div>
+
+    <h1>Novidades</h1>
+    <ul>
+        {% for novidade in novidades %}
+            <li>
+                <h2>{{ novidade.titulo }}</h2>
+                <p>{{ novidade.corpo }}</p>
+                <p>Publicado em: {{ novidade.data_criacao }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
     {% endblock content %}
 </body>
 </html>

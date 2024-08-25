@@ -1,11 +1,11 @@
 <header>
     <div>
-        <a href="{% url 'index' %}"><img src="/static/img/django.svg" alt="logo"></a>
+        <a href="{% url 'index' %}"><img src="/static/img/oracle.svg" alt="logo"></a>
     </div>
     <nav>
         <ul>
-            <li>Novidades</li>
-            <li>Clima</li>
+            <li><a href="{% url 'novidades' %}">Novidades</a></li>
+            <li><a href="{% url 'clima' %}">Clima</a></li>
             <li><a href="{% url 'artigos' %}">Notícias</a></li>
         </ul>
     </nav>
