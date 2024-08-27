@@ -1,0 +1,14 @@
+<!-- e -->    <div class="container">
+        <article>
+            <p class="caixa1">Aqui Começa o site de notícias</p>
+        </article>
+        <article>
+            <p class="caixa2">1</p>
+        </article>
+        <article>
+            <p class="caixa3">2</p>
+        </article>
+        <article>
+            <p class="caixa4">3</p>
+        </article>
+    </div> <!-- e -->

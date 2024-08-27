@@ -14,9 +14,9 @@
     {% block content %}
         <ul>
             {% for titulo in titulos %}
-                <li>
-                    <a href="{% url 'article' titulo.id %}">{{ titulo }}</a>
-                </li>
+                <p >
+                    <a class="lista-noticias" href="{% url 'article' titulo.id %}">{{ titulo }}</a>
+                </p>
             {% empty %}
                 <li>Não há assuntos adicionados</li>
             {% endfor %}
